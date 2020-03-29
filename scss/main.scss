@@ -3,12 +3,93 @@
     padding: 0;
 }
 
-@container {
-    width: 1140px;
+html {
+    font-size: 10px;
 }
 
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Merriweather', serif;
+// font-family: 'Raleway', sans-serif;
 .banner {
+    display: flex;
+    justify-content: center;
     height: 805px;
     width: 100%;
     background-color: #eff0f2;
+}
+
+.container {
+    width: 1140px;
+}
+
+.banner__logo {
+    background: url(../img/SHOPNO.png) no-repeat center;
+    height: 19px;
+    width: 9%;
+    margin-top: 64px;
+    padding: 8px 0;
+    border: 6px solid black;
+    cursor: pointer;
+}
+
+.banner__logo:hover {
+    border: 6px solid #b2f2ee;
+    transition: ease-in-out .3s;
+}
+
+.title {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: .7;
+    text-shadow: 8px 9px 8px rgba(0, 0, 0, 0.24);
+}
+
+.banner__title {
+    margin-top: 193px;
+    margin-left: 7px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 59px;
+}
+
+.colored-title {
+    background-color: #b2f2ee;
+    width: 200px;
+}
+
+.banner__button {
+    margin-top: 137px;
+    text-align: center;
+}
+
+.banner__button button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: 2px solid #777879;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    height: 52px;
+    width: 233px;
+    background: transparent;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.banner__button button:hover {
+    border: 3px solid black;
+    transition: all .3s;
+}
+
+.banner__pictures {
+    position: relative;
+}
+
+.banner-pic {
+    position: absolute;
+    right: 85px;
+    top: -24px;
+    height: 92px;
+    width: 92px;
 }
