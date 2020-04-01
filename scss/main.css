@@ -227,9 +227,77 @@ html {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 112px;
 }
 
 .works__items img {
   padding-bottom: 13px;
+}
+
+.team {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8fafa;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #f8fafa), to(white));
+  background: linear-gradient(180deg, #f8fafa 100%, white 100%);
+}
+
+.team__title__wrapper {
+  margin-top: 93px;
+  margin-bottom: 109px;
+  text-align: center;
+  line-height: 38px;
+}
+
+.team__title {
+  text-align: center;
+  font-size: 3.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 19px;
+  letter-spacing: 2px;
+  margin-left: 4px;
+  letter-spacing: 2px;
+}
+
+.team__subtitle {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: #8d8e8e;
+  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.team__items {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 104px;
+  padding-bottom: 112px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team__items img {
+  padding-bottom: 14px;
+}
+
+.contacts {
+  background: url(../img/christmas_snow.png) no-repeat center;
+  background-size: cover;
+  height: 762px;
+  width: 100%;
+  opacity: .3;
 }
 /*# sourceMappingURL=main.css.map */
