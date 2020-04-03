@@ -307,6 +307,9 @@ html {
 }
 
 .contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 181px;
   width: 53.8%;
   height: 460px;
@@ -416,5 +419,41 @@ textarea::placeholder {
   background-color: #6eeee4;
   border: 0;
   border-radius: 2px;
+}
+
+.contacts__data {
+  margin-top: 181px;
+  width: 43.9%;
+  height: 460px;
+  display: block;
+  background-color: #4a5862;
+  opacity: .9;
+}
+
+.forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__data_info {
+  margin-left: 31px;
+  margin-top: 30px;
+  line-height: 24px;
+}
+
+.contacts__data_info span {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #aeb6ba;
+}
+
+.contacts__data_map {
+  margin-top: 20px;
+  margin-left: 22px;
 }
 /*# sourceMappingURL=main.css.map */
