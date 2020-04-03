@@ -456,4 +456,54 @@ textarea::placeholder {
   margin-top: 20px;
   margin-left: 22px;
 }
+
+.footer {
+  height: 320px;
+  background: #262b2e;
+  text-align: center;
+}
+
+.footer__items {
+  padding-top: 87px;
+}
+
+.footer__items span {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #aeb6ba;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 45px;
+  margin-right: 7px;
+  background-color: #424648;
+  cursor: pointer;
+}
+
+.footer_wrapper:hover {
+  background-color: #6eeee4;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
 /*# sourceMappingURL=main.css.map */
