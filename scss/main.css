@@ -294,10 +294,127 @@ html {
 }
 
 .contacts {
-  background: url(../img/christmas_snow.png) no-repeat center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../img/christmas_snow.jpg) no-repeat center;
   background-size: cover;
   height: 762px;
   width: 100%;
-  opacity: .3;
+}
+
+.contacts__form {
+  margin-top: 181px;
+  width: 53.8%;
+  height: 460px;
+  display: block;
+  background-color: #4a5862;
+  opacity: .9;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 93%;
+  height: 50px;
+  padding-left: 5px;
+  padding-top: 7px;
+  background-color: #4a5862;
+  border: 0;
+  border-bottom: 1px solid #67767f;
+}
+
+input[type="text"],
+input[type="email"],
+::-webkit-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+input[type="text"],
+input[type="email"],
+:-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+input[type="text"],
+input[type="email"],
+::-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+input[type="text"],
+input[type="email"],
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+.form {
+  padding-left: 28px;
+  padding-top: 21px;
+}
+
+.textarea {
+  width: 93%;
+  height: 126px;
+  padding-left: 5px;
+  padding-top: 7px;
+  background-color: #4a5862;
+  border: 0;
+  border-bottom: 1px solid #67767f;
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder {
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+textarea:-ms-input-placeholder {
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+textarea::-ms-input-placeholder {
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+textarea::placeholder {
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aeb6ba;
+}
+
+#btn {
+  width: 244px;
+  height: 53px;
+  margin-top: 37px;
+  margin-left: 2px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+  background-color: #6eeee4;
+  border: 0;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=main.css.map */
