@@ -1,4 +1,4 @@
- @media (max-width: 1230px) {
+     @media (max-width: 1230px) {
      .banner__logo {
          width: 46vh;
          margin-left: auto;
@@ -85,6 +85,9 @@
          background-color: #6ff5eb;
          cursor: pointer;
      }
+     .drop-icon {
+         display: none;
+     }
  }
  
  @media (max-width: 690px) {
@@ -119,3 +122,8 @@
          margin-top: 5%;
      }
  }
+ 
+ @media (max-width: 375px) {
+     .works__title {
+         margin-left: 0;
+     }
