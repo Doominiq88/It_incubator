@@ -24,11 +24,11 @@ html {
 }
 
 .banner__logo {
-  background: url(../img/SHOPNO.png) no-repeat center;
-  height: 19px;
-  width: 9%;
   margin-top: 64px;
   padding: 8px 0;
+  height: 19px;
+  width: 9%;
+  background: url(../img/SHOPNO.png) no-repeat center;
   border: 6px solid black;
   cursor: pointer;
 }
@@ -57,8 +57,8 @@ html {
 }
 
 .colored-title {
-  background-color: #b2f2ee;
   width: 200px;
+  background-color: #b2f2ee;
 }
 
 .banner__button {
@@ -67,13 +67,13 @@ html {
 }
 
 .banner__button button {
+  height: 52px;
+  width: 233px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   border: 2px solid #777879;
   font-size: 1.8rem;
   text-transform: uppercase;
-  height: 52px;
-  width: 233px;
   background: transparent;
   letter-spacing: 2px;
   cursor: pointer;
@@ -90,21 +90,21 @@ html {
 }
 
 .banner-pic {
+  height: 92px;
+  width: 92px;
   position: absolute;
   right: 85px;
   top: -24px;
-  height: 92px;
-  width: 92px;
 }
 
 .about {
-  height: 985px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 985px;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f8fafa));
   background: linear-gradient(180deg, white 0%, #f8fafa 100%);
@@ -117,12 +117,12 @@ html {
 }
 
 .about__title {
+  margin-left: 19px;
   text-align: center;
   font-size: 3.8rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 19px;
   letter-spacing: 2px;
 }
 
@@ -143,9 +143,9 @@ html {
 }
 
 .about__blocks__img {
-  background: url(../img/Image1.png) no-repeat center;
   height: 553px;
   width: 50%;
+  background: url(../img/Image1.png) no-repeat center;
   background-position: left 55px bottom 1px;
 }
 
@@ -158,6 +158,7 @@ html {
 }
 
 .text__title {
+  padding-bottom: 19px;
   font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 2rem;
@@ -165,7 +166,6 @@ html {
   color: #3e3f3f;
   letter-spacing: 1px;
   word-spacing: 2px;
-  padding-bottom: 19px;
 }
 
 .text__subtitle {
@@ -196,12 +196,12 @@ html {
 }
 
 .works__title {
+  margin-left: 19px;
   text-align: center;
   font-size: 3.8rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 19px;
   letter-spacing: 2px;
   margin-left: 42px;
   letter-spacing: 2px;
@@ -217,7 +217,6 @@ html {
 }
 
 .works__items {
-  margin-top: 104px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -225,9 +224,10 @@ html {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-top: 104px;
+  padding-bottom: 112px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 112px;
 }
 
 .works__items img {
@@ -235,13 +235,13 @@ html {
 }
 
 .team {
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: auto;
   background: #f8fafa;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #f8fafa), to(white));
   background: linear-gradient(180deg, #f8fafa 100%, white 100%);
@@ -255,12 +255,12 @@ html {
 }
 
 .team__title {
+  margin-left: 19px;
   text-align: center;
   font-size: 3.8rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 19px;
   letter-spacing: 2px;
   margin-left: 4px;
   letter-spacing: 2px;
@@ -277,13 +277,13 @@ html {
 
 .team__items {
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 104px;
   padding-bottom: 112px;
   -ms-flex-wrap: wrap;
@@ -349,10 +349,10 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/christmas_snow.jpg) no-repeat center;
-  background-size: cover;
   height: 762px;
   width: 100%;
+  background: url(../img/christmas_snow.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .contacts__form {
@@ -362,8 +362,8 @@ html {
   margin-top: 181px;
   width: 53.8%;
   height: 460px;
-  display: block;
   background-color: #4a5862;
+  display: block;
   opacity: .9;
 }
 
@@ -478,10 +478,10 @@ textarea::placeholder {
 }
 
 .contacts__data {
-  margin-top: 181px;
+  display: block;
   width: 43.9%;
   height: 460px;
-  display: block;
+  margin-top: 181px;
   background-color: #4a5862;
   opacity: .9;
 }
