@@ -276,6 +276,7 @@ html {
 }
 
 .team__items {
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -291,6 +292,54 @@ html {
 
 .team__items img {
   padding-bottom: 14px;
+}
+
+.team__drop {
+  position: absolute;
+  top: 184px;
+  left: 400px;
+  width: 340px;
+  height: 240px;
+  background-color: #6ff5eb;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.team__drop:hover {
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+
+.drop-name {
+  margin: 16px 45px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.drop-profession {
+  color: #767776;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.drop-text {
+  margin: 15px 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
+.drop-icon {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.drop-icon a {
+  margin-right: 5px;
 }
 
 .contacts {
@@ -419,6 +468,13 @@ textarea::placeholder {
   background-color: #6eeee4;
   border: 0;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  color: white;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
 }
 
 .contacts__data {
@@ -464,7 +520,7 @@ textarea::placeholder {
 }
 
 .footer__items {
-  padding-top: 87px;
+  padding-top: 91px;
 }
 
 .footer__items span {

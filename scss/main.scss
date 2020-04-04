@@ -1,404 +1,459 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        html {
-            font-size: 10px;
-        }
-        
-        @mixin title {
-            text-align: center;
-            font-size: 3.8rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-left: 19px;
-            letter-spacing: 2px;
-        }
-        
-        @mixin subtitle {
-            font-family: 'Merriweather', serif;
-            text-transform: uppercase;
-            font-size: 1.7rem;
-            color: #8d8e8e;
-            letter-spacing: 2px;
-        }
-        
-        // font-family: 'Montserrat', sans-serif;
-        // font-family: 'Merriweather', serif;
-        // font-family: 'Raleway', sans-serif;
-        // banner
-        .banner {
-            display: flex;
-            justify-content: center;
-            height: 805px;
-            width: 100%;
-            background-color: #eff0f2;
-        }
-        
-        .container {
-            width: 1140px;
-        }
-        
-        .banner__logo {
-            background: url(../img/SHOPNO.png) no-repeat center;
-            height: 19px;
-            width: 9%;
-            margin-top: 64px;
-            padding: 8px 0;
-            border: 6px solid black;
-            cursor: pointer;
-        }
-        
-        .banner__logo:hover {
-            border: 6px solid #b2f2ee;
-            transition: ease-in-out .3s;
-        }
-        
-        .title {
-            font-size: 45px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            opacity: .7;
-            text-shadow: 8px 9px 8px rgba(0, 0, 0, 0.24);
-        }
-        
-        .banner__title {
-            margin-top: 193px;
-            margin-left: 7px;
-            text-align: center;
-            letter-spacing: 2px;
-            line-height: 59px;
-        }
-        
-        .colored-title {
-            background-color: #b2f2ee;
-            width: 200px;
-        }
-        
-        .banner__button {
-            margin-top: 137px;
-            text-align: center;
-        }
-        
-        .banner__button button {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            border: 2px solid #777879;
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            height: 52px;
-            width: 233px;
-            background: transparent;
-            letter-spacing: 2px;
-            cursor: pointer;
-        }
-        
-        .banner__button button:hover {
-            border: 3px solid black;
-            transition: all .3s;
-        }
-        
-        .banner__pictures {
-            position: relative;
-        }
-        
-        .banner-pic {
-            position: absolute;
-            right: 85px;
-            top: -24px;
-            height: 92px;
-            width: 92px;
-        }
-        
-        // about
-        .about {
-            height: 985px;
-            display: flex;
-            justify-content: center;
-            background: rgb(255, 255, 255);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 250, 1) 100%);
-        }
-        
-        .about__title__wrapper {
-            margin-top: 120px;
-            text-align: center;
-            line-height: 42px;
-        }
-        
-        .about__title {
-            @include title;
-        }
-        
-        .about__subtitle {
-            @include subtitle;
-        }
-        
-        .about__blocks {
-            display: flex;
-            width: 100%;
-            margin-top: 87px;
-        }
-        
-        .about__blocks__img {
-            background: url(../img/Image1.png) no-repeat center;
-            height: 553px;
-            width: 50%;
-            background-position: left 55px bottom 1px;
-        }
-        
-        .about__blocks__text {
-            width: 41%;
-            padding-top: 44px;
-            padding-left: 58px;
-            line-height: 27px;
-            text-align: justify;
-        }
-        
-        .text__title {
-            font-family: 'Merriweather', serif;
-            font-weight: bold;
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: #3e3f3f;
-            letter-spacing: 1px;
-            word-spacing: 2px;
-            padding-bottom: 19px;
-        }
-        
-        .text__subtitle {
-            font-family: 'Raleway', sans-serif;
-            font-size: 1.6rem;
-            color: #404141;
-            letter-spacing: 0.5px;
-        }
-        
-        .second {
-            padding-top: 23px;
-            font-size: 1.7rem;
-        }
-        
-        // works
-        .works {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .works__title__wrapper {
-            margin-top: 120px;
-            text-align: center;
-            line-height: 42px;
-        }
-        
-        .works__title {
-            @include title;
-            margin-left: 42px;
-            letter-spacing: 2px;
-        }
-        
-        .works__subtitle {
-            @include subtitle;
-            letter-spacing: 1px;
-        }
-        
-        .works__items {
-            margin-top: 104px;
-            justify-content: space-between;
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            padding-bottom: 112px;
-        }
-        
-        .works__items img {
-            padding-bottom: 13px;
-        }
-        
-        // team 
-        .team {
-            height: auto;
-            display: flex;
-            justify-content: center;
-            background: rgb(248, 250, 250);
-            background: linear-gradient(180deg, rgba(248, 250, 250, 1) 100%, rgba(255, 255, 255, 1) 100%);
-        }
-        
-        .team__title__wrapper {
-            margin-top: 93px;
-            margin-bottom: 109px;
-            text-align: center;
-            line-height: 38px;
-        }
-        
-        .team__title {
-            @include title;
-            margin-left: 4px;
-            letter-spacing: 2px;
-        }
-        
-        .team__subtitle {
-            @include subtitle;
-            letter-spacing: 1px;
-        }
-        
-        .team__items {
-            justify-content: space-between;
-            display: flex;
-            width: 100%;
-            margin-top: 104px;
-            padding-bottom: 112px;
-            flex-wrap: wrap;
-        }
-        
-        .team__items img {
-            padding-bottom: 14px;
-        }
-        
-        // contacts
-        .contacts {
-            display: flex;
-            justify-content: center;
-            background: url(../img/christmas_snow.jpg) no-repeat center;
-            background-size: cover;
-            height: 762px;
-            width: 100%;
-        }
-        
-        .contacts__form {
-            display: flex;
-            margin-top: 181px;
-            width: 53.8%;
-            height: 460px;
-            display: block;
-            background-color: #4a5862;
-            opacity: .9;
-        }
-        
-        input[type="text"],
-        input[type="email"] {
-            width: 93%;
-            height: 50px;
-            padding-left: 5px;
-            padding-top: 7px;
-            background-color: #4a5862;
-            border: 0;
-            border-bottom: 1px solid #67767f;
-        }
-        
-        input[type="text"],
-        input[type="email"],
-         ::placeholder {
-            font-family: 'Raleway', sans-serif;
-            font-size: 15px;
-            color: #aeb6ba;
-        }
-        
-        .form {
-            padding-left: 28px;
-            padding-top: 21px;
-        }
-        
-        .textarea {
-            width: 93%;
-            height: 126px;
-            padding-left: 5px;
-            padding-top: 7px;
-            background-color: #4a5862;
-            border: 0;
-            border-bottom: 1px solid #67767f;
-            resize: none;
-        }
-        
-        textarea::placeholder {
-            padding-top: 20px;
-            font-family: 'Raleway', sans-serif;
-            font-size: 15px;
-            color: #aeb6ba;
-        }
-        
-        #btn {
-            width: 244px;
-            height: 53px;
-            margin-top: 37px;
-            margin-left: 2px;
-            text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            color: black;
-            letter-spacing: 2px;
-            background-color: #6eeee4;
-            border: 0;
-            border-radius: 2px;
-        }
-        
-        .contacts__data {
-            margin-top: 181px;
-            width: 43.9%;
-            height: 460px;
-            display: block;
-            background-color: #4a5862;
-            opacity: .9;
-        }
-        
-        .forms {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .contacts__data_info {
-            margin-left: 31px;
-            margin-top: 30px;
-            line-height: 24px;
-            span {
-                display: block;
-                font-family: 'Raleway', sans-serif;
-                font-size: 1.5rem;
-                color: #aeb6ba;
-            }
-        }
-        
-        .contacts__data_map {
-            margin-top: 20px;
-            margin-left: 22px;
-        }
-        
-        .footer {
-            height: 320px;
-            background: #262b2e;
-            text-align: center;
-        }
-        
-        .footer__items {
-            padding-top: 87px;
-            span {
-                font-size: 1.6rem;
-                font-family: 'Raleway', sans-serif;
-                text-transform: uppercase;
-                color: #aeb6ba;
-            }
-        }
-        
-        .footer__social {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        .footer_wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-            width: 45px;
-            margin-right: 7px;
-            background-color: #424648;
-            cursor: pointer;
-        }
-        
-        .footer_wrapper:hover {
-            background-color: #6eeee4;
-            transition: ease-in 0.2s
-        }
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  html {
+      font-size: 10px;
+  }
+  
+  @mixin title {
+      text-align: center;
+      font-size: 3.8rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 19px;
+      letter-spacing: 2px;
+  }
+  
+  @mixin subtitle {
+      font-family: 'Merriweather', serif;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: #8d8e8e;
+      letter-spacing: 2px;
+  }
+  
+  // font-family: 'Montserrat', sans-serif;
+  // font-family: 'Merriweather', serif;
+  // font-family: 'Raleway', sans-serif;
+  // banner
+  .banner {
+      display: flex;
+      justify-content: center;
+      height: 805px;
+      width: 100%;
+      background-color: #eff0f2;
+  }
+  
+  .container {
+      width: 1140px;
+  }
+  
+  .banner__logo {
+      background: url(../img/SHOPNO.png) no-repeat center;
+      height: 19px;
+      width: 9%;
+      margin-top: 64px;
+      padding: 8px 0;
+      border: 6px solid black;
+      cursor: pointer;
+  }
+  
+  .banner__logo:hover {
+      border: 6px solid #b2f2ee;
+      transition: ease-in-out .3s;
+  }
+  
+  .title {
+      font-size: 45px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      opacity: .7;
+      text-shadow: 8px 9px 8px rgba(0, 0, 0, 0.24);
+  }
+  
+  .banner__title {
+      margin-top: 193px;
+      margin-left: 7px;
+      text-align: center;
+      letter-spacing: 2px;
+      line-height: 59px;
+  }
+  
+  .colored-title {
+      background-color: #b2f2ee;
+      width: 200px;
+  }
+  
+  .banner__button {
+      margin-top: 137px;
+      text-align: center;
+  }
+  
+  .banner__button button {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      border: 2px solid #777879;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      height: 52px;
+      width: 233px;
+      background: transparent;
+      letter-spacing: 2px;
+      cursor: pointer;
+  }
+  
+  .banner__button button:hover {
+      border: 3px solid black;
+      transition: all .3s;
+  }
+  
+  .banner__pictures {
+      position: relative;
+  }
+  
+  .banner-pic {
+      position: absolute;
+      right: 85px;
+      top: -24px;
+      height: 92px;
+      width: 92px;
+  }
+  
+  // about
+  .about {
+      height: 985px;
+      display: flex;
+      justify-content: center;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 250, 1) 100%);
+  }
+  
+  .about__title__wrapper {
+      margin-top: 120px;
+      text-align: center;
+      line-height: 42px;
+  }
+  
+  .about__title {
+      @include title;
+  }
+  
+  .about__subtitle {
+      @include subtitle;
+  }
+  
+  .about__blocks {
+      display: flex;
+      width: 100%;
+      margin-top: 87px;
+  }
+  
+  .about__blocks__img {
+      background: url(../img/Image1.png) no-repeat center;
+      height: 553px;
+      width: 50%;
+      background-position: left 55px bottom 1px;
+  }
+  
+  .about__blocks__text {
+      width: 41%;
+      padding-top: 44px;
+      padding-left: 58px;
+      line-height: 27px;
+      text-align: justify;
+  }
+  
+  .text__title {
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #3e3f3f;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      padding-bottom: 19px;
+  }
+  
+  .text__subtitle {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.6rem;
+      color: #404141;
+      letter-spacing: 0.5px;
+  }
+  
+  .second {
+      padding-top: 23px;
+      font-size: 1.7rem;
+  }
+  
+  // works
+  .works {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .works__title__wrapper {
+      margin-top: 120px;
+      text-align: center;
+      line-height: 42px;
+  }
+  
+  .works__title {
+      @include title;
+      margin-left: 42px;
+      letter-spacing: 2px;
+  }
+  
+  .works__subtitle {
+      @include subtitle;
+      letter-spacing: 1px;
+  }
+  
+  .works__items {
+      margin-top: 104px;
+      justify-content: space-between;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      padding-bottom: 112px;
+  }
+  
+  .works__items img {
+      padding-bottom: 13px;
+  }
+  
+  // team 
+  .team {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      background: rgb(248, 250, 250);
+      background: linear-gradient(180deg, rgba(248, 250, 250, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  }
+  
+  .team__title__wrapper {
+      margin-top: 93px;
+      margin-bottom: 109px;
+      text-align: center;
+      line-height: 38px;
+  }
+  
+  .team__title {
+      @include title;
+      margin-left: 4px;
+      letter-spacing: 2px;
+  }
+  
+  .team__subtitle {
+      @include subtitle;
+      letter-spacing: 1px;
+  }
+  
+  .team__items {
+      position: relative;
+      justify-content: space-between;
+      display: flex;
+      width: 100%;
+      margin-top: 104px;
+      padding-bottom: 112px;
+      flex-wrap: wrap;
+  }
+  
+  .team__items img {
+      padding-bottom: 14px;
+  }
+  
+  .team__drop {
+      position: absolute;
+      top: 184px;
+      left: 400px;
+      width: 340px;
+      height: 240px;
+      background-color: #6ff5eb;
+      opacity: 0;
+      cursor: pointer;
+  }
+  
+  .team__drop:hover {
+      opacity: 0;
+      transition: ease-out 0.3s;
+  }
+  
+  .drop-name {
+      margin: 16px 45px;
+      text-align: center;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: black;
+  }
+  
+  .drop-profession {
+      color: #767776;
+      font-size: 1.4rem;
+      font-weight: lighter;
+      ;
+  }
+  
+  .drop-text {
+      margin: 15px 40px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.6rem;
+      line-height: 30px;
+  }
+  
+  .drop-icon {
+      margin-top: 20px;
+      margin-left: 40px;
+  }
+  
+  .drop-icon a {
+      margin-right: 5px;
+  }
+  
+  // contacts
+  .contacts {
+      display: flex;
+      justify-content: center;
+      background: url(../img/christmas_snow.jpg) no-repeat center;
+      background-size: cover;
+      height: 762px;
+      width: 100%;
+  }
+  
+  .contacts__form {
+      display: flex;
+      margin-top: 181px;
+      width: 53.8%;
+      height: 460px;
+      display: block;
+      background-color: #4a5862;
+      opacity: .9;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+      width: 93%;
+      height: 50px;
+      padding-left: 5px;
+      padding-top: 7px;
+      background-color: #4a5862;
+      border: 0;
+      border-bottom: 1px solid #67767f;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+   ::placeholder {
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      color: #aeb6ba;
+  }
+  
+  .form {
+      padding-left: 28px;
+      padding-top: 21px;
+  }
+  
+  .textarea {
+      width: 93%;
+      height: 126px;
+      padding-left: 5px;
+      padding-top: 7px;
+      background-color: #4a5862;
+      border: 0;
+      border-bottom: 1px solid #67767f;
+      resize: none;
+  }
+  
+  textarea::placeholder {
+      padding-top: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      color: #aeb6ba;
+  }
+  
+  #btn {
+      width: 244px;
+      height: 53px;
+      margin-top: 37px;
+      margin-left: 2px;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      letter-spacing: 2px;
+      background-color: #6eeee4;
+      border: 0;
+      border-radius: 2px;
+      cursor: pointer;
+  }
+  
+  #btn:hover {
+      color: white;
+      transition: ease-in 0.2s
+  }
+  
+  .contacts__data {
+      margin-top: 181px;
+      width: 43.9%;
+      height: 460px;
+      display: block;
+      background-color: #4a5862;
+      opacity: .9;
+  }
+  
+  .forms {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .contacts__data_info {
+      margin-left: 31px;
+      margin-top: 30px;
+      line-height: 24px;
+      span {
+          display: block;
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.5rem;
+          color: #aeb6ba;
+      }
+  }
+  
+  .contacts__data_map {
+      margin-top: 20px;
+      margin-left: 22px;
+  }
+  
+  .footer {
+      height: 320px;
+      background: #262b2e;
+      text-align: center;
+  }
+  
+  .footer__items {
+      padding-top: 91px;
+      span {
+          font-size: 1.6rem;
+          font-family: 'Raleway', sans-serif;
+          text-transform: uppercase;
+          color: #aeb6ba;
+      }
+  }
+  
+  .footer__social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  
+  .footer_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 45px;
+      margin-right: 7px;
+      background-color: #424648;
+      cursor: pointer;
+  }
+  
+  .footer_wrapper:hover {
+      background-color: #6eeee4;
+      transition: ease-in 0.2s
+  }
