@@ -4,23 +4,6 @@ const teamImg = document.querySelectorAll('.team__img');
 const teamFoto = document.querySelectorAll('.team__foto');
 
 
-teamImg.forEach((element) => {
-    element.addEventListener('mouseover', (event) => {
-        // if (event.target.tagName != 'IMG') return;
-        // if (event.target.tagName === 'P' || event.target.tagName === 'DIV') { 
-        //     event.target.previousElementSibling.classList.add('drop_on'); };
-        event.target.previousElementSibling.classList.add('drop_on');
-    });
-})
-
-teamImg.forEach((element) => {
-    element.addEventListener('mouseout', (event) => {
-        if (event.target.tagName != 'IMG') return;
-        event.target.previousElementSibling.classList.remove('drop_on');
-    });
-})
-
-
 //create pop-up Img
 
 const popUp = document.querySelector('.about__blocks__img');
@@ -121,3 +104,18 @@ buttonCloseImg.addEventListener('click', () => {
     imgDiv.classList.remove('background-euro');
     imgDiv.classList.remove('background-pack');
 });
+
+// hover
+
+teamImg.forEach((element) => {
+    element.addEventListener('mouseover', (event) => {
+        event.target.previousElementSibling.classList.add('drop_on');
+    });
+})
+
+teamImg.forEach((element) => {
+    element.addEventListener('mouseout', (event) => {
+        if (event.target.tagName != 'IMG') return;
+        event.target.previousElementSibling.classList.remove('drop_on');
+    });
+})
