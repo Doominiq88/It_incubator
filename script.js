@@ -1,11 +1,51 @@
   import people from './array.js';
 
-  // console.log(people);
+  // creat team block 
 
   const team = document.querySelector('.team__items');
-  const drop = document.querySelector('.team__drop');
-  const teamImg = document.querySelectorAll('.team__img');
   const teamFoto = document.querySelectorAll('.team__foto');
+
+  people.forEach((element) => {
+      const teamFoto = document.createElement('div');
+      teamFoto.classList.add('team__foto');
+      team.append(teamFoto);
+
+      const teamDrop = document.createElement('div');
+      teamDrop.classList.add('team__drop');
+      teamFoto.append(teamDrop);
+
+      const dropName = document.createElement('p');
+      dropName.classList.add('drop-name');
+      teamDrop.append(dropName);
+
+
+
+      const teamImg = document.createElement('img');
+      teamImg.classList.add('team__img');
+
+      teamFoto.append(teamImg);
+
+  });
+
+  const teamImg = document.querySelectorAll('.team__img');
+  const dropName = document.querySelectorAll('.drop-name');
+  //   console.log(dropName);
+
+  const arrayOfSrc = people.map(person => person.image);
+
+  teamImg.forEach((element, index) => element.setAttribute('src', arrayOfSrc[index]));
+
+  const arrayOfName = people.map(person => person.name);
+  dropName.forEach((element, index) => {
+      element.innerHTML = arrayOfName[index];
+  });
+  console.log(arrayOfName)
+
+
+
+
+
+
 
 
   //create pop-up Img
@@ -39,7 +79,6 @@
   imgDiv.append(buttonCloseImg);
 
   buttonCloseImg.innerHTML = 'X';
-
 
   workImages.forEach((element) => {
       element.addEventListener('click', (event) => {
@@ -118,3 +157,5 @@
           element.children[0].classList.remove('drop_on');
       });
   });
+
+  // team block

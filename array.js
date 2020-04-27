@@ -1,36 +1,42 @@
  const people = [{
 
-         name: 'Petya',
+         name: 'Nina Rich',
          age: 22,
-         description: 'fdvdfvdvkjdfkvfdjvb'
+         description: 'fdvdfvdvkjdfkvfdjvb',
+         image: './img/team1.png',
 
      },
      {
-         name: 'Vasya',
+         name: 'AL RAYHAN',
          age: 24,
-         description: 'fdvdfvdvkjdfkvfdjvb'
+         description: 'fdvdfvdvkjdfkvfdjvb',
+         image: './img/team2.png',
      },
      {
-         name: 'Ivan',
+         name: 'Ivan Drago',
          age: 28,
-         description: 'fdvdfvdvkjdfkvfdjvb'
+         description: 'fdvdfvdvkjdfkvfdjvb',
+         image: './img/team3.png',
      },
      {
-         name: 'Pasha',
+         name: 'Harvey Specter ',
          age: 26,
-         description: 'fdvdfvdvkjdfkvfdjvb'
+         description: 'fdvdfvdvkjdfkvfdjvb',
+         image: './img/team4.png',
      },
      {
-         name: 'Petya',
+         name: 'Martha Steward ',
          age: 22,
-         description: 'fdvdfvdvkjdfkvfdjvb'
+         description: 'fdvdfvdvkjdfkvfdjvb',
+         image: './img/team5.png',
      },
      {
-         name: 'Petya',
+         name: 'Mary Brusnikina',
          age: 22,
-         description: 'fdvdfvdvkjdfkvfdjvb'
+         description: 'fdvdfvdvkjdfkvfdjvb',
+         image: './img/team6.png',
      },
  ]
- console.log(people)
+
 
  export default people;
