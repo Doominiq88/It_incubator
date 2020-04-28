@@ -1,6 +1,6 @@
  const people = [{
 
-         name: 'Nina Rich',
+         name: 'NINA RICH',
          age: 22,
          description: 'fdvdfvdvkjdfkvfdjvb',
          image: './img/team1.png',
@@ -13,30 +13,29 @@
          image: './img/team2.png',
      },
      {
-         name: 'Ivan Drago',
+         name: 'HARVEY SPECTER',
          age: 28,
          description: 'fdvdfvdvkjdfkvfdjvb',
          image: './img/team3.png',
      },
      {
-         name: 'Harvey Specter ',
+         name: 'IVAN DRAGO',
          age: 26,
          description: 'fdvdfvdvkjdfkvfdjvb',
          image: './img/team4.png',
      },
      {
-         name: 'Martha Steward ',
+         name: 'MARTHA STEWARD',
          age: 22,
          description: 'fdvdfvdvkjdfkvfdjvb',
          image: './img/team5.png',
      },
      {
-         name: 'Mary Brusnikina',
+         name: 'MARY BRUSNIKINA',
          age: 22,
          description: 'fdvdfvdvkjdfkvfdjvb',
          image: './img/team6.png',
      },
  ]
-
 
  export default people;

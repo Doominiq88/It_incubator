@@ -3,13 +3,13 @@
   // creat team block 
 
   const team = document.querySelector('.team__items');
-  const teamFoto = document.querySelectorAll('.team__foto');
 
   people.forEach((element) => {
       const teamFoto = document.createElement('div');
       teamFoto.classList.add('team__foto');
       team.append(teamFoto);
 
+      //drop items
       const teamDrop = document.createElement('div');
       teamDrop.classList.add('team__drop');
       teamFoto.append(teamDrop);
@@ -18,35 +18,64 @@
       dropName.classList.add('drop-name');
       teamDrop.append(dropName);
 
+      const dropText = document.createElement('p');
+      dropText.classList.add('drop-text');
+      teamDrop.append(dropText);
+      dropText.innerHTML = 'Lorem Ipsum is not simply is an action designer random text It has roots in a piece.'
 
+      const dropIcon = document.createElement('div');
+      dropIcon.classList.add('drop-icon');
+      teamDrop.append(dropIcon);
+
+      const iconImgFacebook = document.createElement('a');
+      iconImgFacebook.setAttribute('href', 'img/drop-icon1.png');
+      dropIcon.append(iconImgFacebook);
+
+      const socialIconFacebook = document.createElement('img');
+      socialIconFacebook.setAttribute('src', 'img/drop-icon1.png');
+      iconImgFacebook.append(socialIconFacebook);
+
+      const iconImgTwitter = document.createElement('a');
+      iconImgTwitter.setAttribute('href', '#');
+      dropIcon.append(iconImgTwitter);
+
+      const socialIconTwitter = document.createElement('img');
+      socialIconTwitter.setAttribute('src', 'img/drop-icon2.png');
+      iconImgTwitter.append(socialIconTwitter);
+
+      const iconImgBall = document.createElement('a');
+      iconImgBall.setAttribute('href', '#');
+      dropIcon.append(iconImgBall);
+
+      const socialIconBall = document.createElement('img');
+      socialIconBall.setAttribute('src', 'img/drop-icon3.png');
+      iconImgBall.append(socialIconBall);
+
+      const iconImgMail = document.createElement('a');
+      iconImgMail.setAttribute('href', '#');
+      dropIcon.append(iconImgMail);
+
+      const socialIconMail = document.createElement('img');
+      socialIconMail.setAttribute('src', 'img/drop-icon4.png');
+      iconImgMail.append(socialIconMail);
 
       const teamImg = document.createElement('img');
       teamImg.classList.add('team__img');
 
       teamFoto.append(teamImg);
-
   });
 
+  const teamFoto = document.querySelectorAll('.team__foto');
   const teamImg = document.querySelectorAll('.team__img');
   const dropName = document.querySelectorAll('.drop-name');
-  //   console.log(dropName);
 
   const arrayOfSrc = people.map(person => person.image);
-
   teamImg.forEach((element, index) => element.setAttribute('src', arrayOfSrc[index]));
 
   const arrayOfName = people.map(person => person.name);
-  dropName.forEach((element, index) => {
-      element.innerHTML = arrayOfName[index];
-  });
-  console.log(arrayOfName)
+  dropName.forEach((element, index) => element.innerHTML = arrayOfName[index]);
 
-
-
-
-
-
-
+  console.log(teamFoto);
 
   //create pop-up Img
 
@@ -58,7 +87,6 @@
   const buttonClose = document.createElement('button');
   buttonClose.classList.add('close-btn');
   popUpDiv.append(buttonClose);
-
   buttonClose.innerHTML = 'X';
 
   const site = document.querySelector('.site');
@@ -69,7 +97,6 @@
   const workImages = document.querySelectorAll('.works__items img');
   const workItem = document.querySelector('.works__items');
 
-
   const imgDiv = document.createElement('div');
   imgDiv.classList.add('img-div');
   popUpDiv.append(buttonClose);
@@ -77,7 +104,6 @@
   const buttonCloseImg = document.createElement('button');
   buttonCloseImg.classList.add('img-close-btn');
   imgDiv.append(buttonCloseImg);
-
   buttonCloseImg.innerHTML = 'X';
 
   workImages.forEach((element) => {
